@@ -33,7 +33,19 @@ a:hover{
 	border-bottom: 1px solid salmon;
 }
 
+.hide{
+	display: none;
+}
+#menu_toggle{
+	cursor: pointer;
+	position: absolute;
+	padding: 5vw 0 0 5vw;
+	width: 10vw;
+	z-index: 1000;
+}
+
 nav{
+	background-color: rgba(0,0,0, 0.5);
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -44,15 +56,15 @@ nav{
 	justify-content: center;
 }
 .nav_links{
-	padding-left: 5vw;
+	padding: 0 5vw 0 5vw;
 }
 .page_link{
-	margin-top: 2vw;
+	margin-top: 5vh;
 	font-weight:normal;
 }
 .page_link--active a{
-	color: salmon;
-	border-color: salmon;
+	font-weight: bold;
+	color: white;
 }
 .subpage_links a{
 	font-weight: lighter;
@@ -159,6 +171,9 @@ footer{
 	html{
 		background: rgb(40,20,20);
 		background: radial-gradient(circle, rgba(40,20,20,1) 0%, rgba(14,17,55,1) 50%, rgba(40,20,20,1) 100%);
+	}
+	nav{
+		background-color: transparent;
 	}
 	main{
 		width: 60%;
