@@ -34,17 +34,22 @@ a:hover{
 }
 
 .hide{
-	display: none;
+	margin-left: -50vh;
+	opacity: 0;
+	transition: 0.5s;
 }
 #menu_toggle{
 	cursor: pointer;
-	position: absolute;
+	position: sticky;
+	top: 0;
 	padding: 5vw 0 0 5vw;
 	width: 10vw;
 	z-index: 1000;
 }
 
 nav{
+	transition: 0.5s;
+	opacity: 1;
 	background-color: rgba(0,0,0, 0.5);
 	position: fixed;
 	top: 0;
